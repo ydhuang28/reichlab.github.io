@@ -1,4 +1,197 @@
-#2020
+# 2021
+
+
+- title: >
+    Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
+    — United States, April–September 2021
+  slug: modeling-future
+  authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
+  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
+  year: 2021
+  keywords: covid-19, forecasting
+  abstract: >
+    What is already known about this topic?
+      Increases in COVID-19 cases in March and early April occurred despite a large-scale vaccination program.
+      Increases coincided with the spread of SARS-CoV-2 variants and relaxation of nonpharmaceutical interventions (NPIs).
+    What is added by this report?
+      Data from six models indicate that with high vaccination coverage and moderate NPI adherence,
+      hospitalizations and deaths will likely remain low nationally, with a sharp decline in cases projected by July 2021.
+      Lower NPI adherence could lead to substantial increases in severe COVID-19 outcomes, even with improved vaccination coverage.
+    What are the implications for public health practice?
+      High vaccination coverage and compliance with NPIs are essential to control COVID-19 and prevent surges in
+      hospitalizations and deaths in the coming months.
+
+
+- title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
+  slug: reich-zoltar-forecast
+  authors: Reich NG, Cornell M, Ray EL, House K, Le K
+  preprint: https://arxiv.org/abs/2006.03922
+  pdf: reich-zoltar-forecast
+  year: 2021
+  doi: https://doi.org/10.1038/s41597-021-00839-5
+  keywords: forecasting, software
+  abstract: >
+    Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
+    We introduce a new data model for probabilistic predictions that encompasses a wide range of forecasting settings. This 
+    framework clearly defines the constituent parts of a probabilistic forecast and proposes one approach for representing 
+    these data elements. The data model is implemented in Zoltar, a new software application that stores forecasts using the 
+    data model and provides standardized API access to the data. In one real-time case study, an instance of the Zoltar web 
+    application was used to store, provide access to, and evaluate real-time forecast data on the order of 107 rows, provided 
+    by over 20 international research teams from academia and industry making forecasts of the COVID-19 outbreak in the US. 
+    Tools and data infrastructure for probabilistic forecasts, such as those introduced here, will play an increasingly 
+    important role in ensuring that future forecasting research adheres to a strict set of rigorous and reproducible standards.
+
+- title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
+  slug: improving-probabilistic-coherence
+  authors: Gibson GC, Moran K, Reich NG, Osthus D
+  preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
+  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
+  year: 2021
+  doi:  http://dx.doi.org/10.1371/journal.pcbi.1007623
+  keywords: forecasting, influenza, flusight
+  abstract: >
+    With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
+    poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
+    of influenza, the U.S. Centers for Disease Control and Prevention (CDC) runs a challenge for forecasting 
+    weighted influenza-like illness (wILI) at the national and regional level. Many models produce independent 
+    forecasts for each geographical unit, ignoring the constraint that the national wILI is a weighted sum of regional 
+    wILI, where the weights correspond to the population size of the region. We propose a novel algorithm that transforms 
+    a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
+    coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
+    over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
+
+
+- title: 'Evaluating epidemic forecasts in an interval format'
+  slug: bracher-interval-format
+  authors: Bracher J, Ray EL, Gneiting T, Reich NG
+  preprint: https://arxiv.org/abs/2005.12881
+  pdf: https://arxiv.org/pdf/2005.12881.pdf
+  year: 2021
+  doi: https://doi.org/10.1371/journal.pcbi.1008618
+  keywords: forecasting, covid-19
+  abstract: >
+    For practical reasons, many forecasts of case, hospitalization and death counts in the context 
+    of the current COVID-19 pandemic are issued in the form of central predictive intervals at various 
+    levels. This is also the case for the forecasts collected in the COVID-19 Forecast Hub run by the 
+    UMass-Amherst Influenza Forecasting Center of Excellence. Forecast evaluation metrics like the 
+    logarithmic score, which has been applied in several infectious disease forecasting challenges, 
+    are then not available as they require full predictive distributions. This note provides an overview 
+    of how established methods for the evaluation of quantile and interval forecasts can be applied to 
+    epidemic forecasts. Specifically, we discuss the computation and interpretation of the weighted 
+    interval score, which is a proper score that approximates the continuous ranked probability score. 
+    It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
+    for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
+
+- title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US'
+  slug: cramer-evaluation
+  authors: Cramer EY , Ray EL , Lopez VK , Bracher J ...... Slayton RB, Johansson M , Biggerstaff M  , Reich NG
+  pdf: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1.full.pdf
+  year: 2021
+  doi: https://doi.org/10.1101/2021.02.03.21250974
+  keywords: covid-19
+  abstract: >
+    Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. 
+    Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. 
+    In 2020, the COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. 
+    This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. 
+    One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. 
+    Half of the models evaluated showed better accuracy than a naïve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. 
+    Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
+    This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
+
+# 2020
+
+- title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
+  slug: pollet-epidemic
+  authors: Pollett S, Johansson M,Biggerstaff M, Morton LC, Bazaco SL, Major DMB, Ibarra AMS, Pavlin JA, Mate S, Sippy R, Hartman LJ, Reich NG, Maljkovic I, Chretien BJP, Althouse BM, Myer D, Viboud C, Rivers C
+  pdf: https://reader.elsevier.com/reader/sd/pii/S175543652030027X?token=DCCCED844BA8FB8FC0D1A0D760890C5C5075CCC1D37C317DF5404D7621D9DB43EF5A2BF4D3120AE454E3BAEEC2EF49A1
+  year: 2020
+  doi: https://doi.org/10.1016/j.epidem.2020.100400
+  keywords: forecasting
+  abstract: >
+    Introduction
+      High quality epidemic forecasting and prediction are critical to support response to local, regional and global infectious disease threats. Other fields of biomedical research use consensus reporting guidelines to ensure standardization and quality of research practice among researchers, and to provide a framework for end-users to interpret the validity of study results. The purpose of this study was to determine whether guidelines exist specifically for epidemic forecast and prediction publications.
+    Methods
+      We undertook a formal systematic review to identify and evaluate any published infectious disease epidemic forecasting and prediction reporting guidelines. This review leveraged a team of 18 investigators from US Government and academic sectors.
+    Results
+      A literature database search through May 26, 2019, identified 1467 publications (MEDLINE n = 584, EMBASE n = 883), and a grey-literature review identified a further 407 publications, yielding a total 1777 unique publications. A paired-reviewer system screened in 25 potentially eligible publications, of which two were ultimately deemed eligible. A qualitative review of these two published reporting guidelines indicated that neither were specific for epidemic forecasting and prediction, although they described reporting items which may be relevant to epidemic forecasting and prediction studies.
+    Conclusions
+      This systematic review confirms that no specific guidelines have been published to standardize the reporting of epidemic forecasting and prediction studies. These findings underscore the need to develop such reporting guidelines in order to improve the transparency, quality and implementation of epidemic forecasting and prediction research in operational public health.
+  
+  
+- title: 'Real-time mechanistic bayesian forecasts of Covid-19 mortality'
+  slug: gibson-mortality
+  authors: Gibson GC , Reich NG , Sheldon D
+  preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
+  pdf: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2.full.pdf
+  year: 2020
+  doi: 10.1101/2020.12.22.20248736
+  keywords: covid-19
+  abstract: >
+    The COVID-19 pandemic emerged in late December 2019. In the first six months of the global outbreak, 
+    the US reported more cases and deaths than any other country in the world. Effective modeling of the course of the pandemic can help assist 
+    with public health resource planning, intervention efforts, and vaccine clinical trials. 
+    However, building applied forecasting models presents unique challenges during a pandemic. First, case data available to models in 
+    real-time represent a non-stationary fraction of the true case incidence due to changes in available diagnostic tests and test-seeking behavior. 
+    Second, interventions varied across time and geography leading to large changes in transmissibility over the course of the pandemic. 
+    We propose a mechanistic Bayesian model (MechBayes) that builds upon the classic compartmental susceptible-exposed-infected-recovered (SEIR) 
+    model to operationalize COVID-19 forecasting in real time. This framework includes non-parametric modeling of varying transmission rates, 
+    non-parametric modeling of case and death discrepancies due to testing and reporting issues, and a joint observation likelihood on new case 
+    counts and new deaths; it is implemented in a probabilistic programming language to automate the use of Bayesian reasoning for quantifying 
+    uncertainty in probabilistic forecasts. The model has been used to submit forecasts to the US Centers for Disease Control, 
+    through the COVID-19 Forecast Hub. We examine the performance relative to a baseline model as well as alternate models submitted to the Forecast Hub. 
+    Additionally, we include an ablation test of our extensions to the classic SEIR models. We demonstrate a significant gain in both point and 
+    probabilistic forecast scoring measures using MechBayes when compared to a baseline model. We show that MechBayes ranks as one of the top models 
+    out of those submitted to the COVID-19 Forecast Hub. Finally, we demonstrate that MechBayes performs significantly better than the classical SEIR model.
+
+
+- title: 'Seasonal patterns of dengue incidence in Thailand across the urban-rural gradient'
+  slug: bi-dengue-patterns
+  authors: Bi Q, Cummings DAT, Reich NG, Keegan LT, Kaminsky J, Salje H, Clapham H, Doung-ngern P, Iamsirithaworn S, Lessler J
+  preprint: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1
+  pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf
+  year: 2020
+  doi: 10.1101/2020.11.25.20186056
+  keywords: dengue
+  abstract: >
+    In Southeast Asia, endemic dengue follows strong spatio-temporal 
+    patterns with major epidemics occurring every 2-5 years. However, 
+    important spatio-temporal variation in seasonal dengue epidemics 
+    remains poorly understood. Using 13 years (2003-2015) of dengue 
+    surveillance data from 926 districts in Thailand and wavelet 
+    analysis, we show that rural epidemics lead urban epidemics within 
+    a dengue season, both nationally and within health regions. 
+    However, local dengue fade-outs are more likely in rural areas than 
+    in urban areas during the off season, suggesting rural areas are not 
+    the source of viral dispersion. Simple dynamic models show that 
+    stronger seasonal forcing in rural areas could explain the 
+    inconsistency between earlier rural epidemics and dengue “over 
+    wintering” in urban areas. These results add important nuance to 
+    earlier work showing the importance of urban areas in driving 
+    multi-annual patterns of dengue incidence in Thailand. Feedback 
+    between geographically linked locations with markedly different 
+    ecology is key to explaining full disease dynamics across urban-rural gradient.
+
+- title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
+  slug: mcandrew-judgement-model
+  authors: McAndrew TC, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
+  pdf: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1.full.pdf
+  year: 2020
+  doi: 10.1101/2020.09.21.20196725
+  keywords: covid-19, forecasting
+  abstract: >
+    During early stages of the COVID-19 pandemic, forecasts provided actionable information about
+    disease transmission to public health decision-makers. Between February and May 2020, experts
+    in infectious disease modeling made weekly predictions about the impact of the pandemic in the
+    U.S. We aggregated these predictions into consensus predictions. In March and April 2020,
+    experts predicted that the number of COVID-19 related deaths in the U.S. by the end of 2020
+    would be in the range of 150,000 to 250,000, with scenarios of near 1m deaths considered
+    plausible. The wide range of possible future outcomes underscored the uncertainty surrounding
+    the outbreak’s trajectory. Experts’ predictions of measurable short-term outcomes had varying
+    levels of accuracy over the surveys but showed appropriate levels of uncertainty when
+    aggregated. An expert consensus model can provide important insight early on in an emerging
+    global catastrophe.
 
 - title: 'Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S.'
   slug: ray-ensemble-covid19
@@ -89,24 +282,6 @@
     guidance to strengthen future work that is growing at an accelerated pace.
 
 
-- title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
-  slug: reich-zoltar-forecast
-  authors: Reich NG, Cornell M, Ray EL, House K, Le K
-  preprint: https://arxiv.org/abs/2006.03922
-  pdf: https://arxiv.org/pdf/2006.03922.pdf
-  year: 2020
-  keywords: forecasting, software
-  abstract: >
-    Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
-    We introduce a new data model for probabilistic predictions that encompasses a wide range of forecasting settings. This 
-    framework clearly defines the constituent parts of a probabilistic forecast and proposes one approach for representing 
-    these data elements. The data model is implemented in Zoltar, a new software application that stores forecasts using the 
-    data model and provides standardized API access to the data. In one real-time case study, an instance of the Zoltar web 
-    application was used to store, provide access to, and evaluate real-time forecast data on the order of 107 rows, provided 
-    by over 20 international research teams from academia and industry making forecasts of the COVID-19 outbreak in the US. 
-    Tools and data infrastructure for probabilistic forecasts, such as those introduced here, will play an increasingly 
-    important role in ensuring that future forecasting research adheres to a strict set of rigorous and reproducible standards.
-
 
 - title: 'Infectious Disease Forecasting for Public Health'
   slug: lauer-public-health
@@ -131,28 +306,6 @@
     a background to the practice of forecasting in general, discusses the biological and statistical models used for 
     infectious disease forecasting, presents technical details about making and evaluating forecasting models, and 
     explores the issues in communicating forecasting results in a public health context.
-
-
-- title: 'Evaluating epidemic forecasts in an interval format'
-  slug: bracher-interval-format
-  authors: Bracher J, Ray EL, Gneiting T, Reich NG
-  preprint: https://arxiv.org/abs/2005.12881
-  pdf: https://arxiv.org/pdf/2005.12881.pdf
-  year: 2020
-  keywords: forecasting, covid-19
-  abstract: >
-    For practical reasons, many forecasts of case, hospitalization and death counts in the context 
-    of the current COVID-19 pandemic are issued in the form of central predictive intervals at various 
-    levels. This is also the case for the forecasts collected in the COVID-19 Forecast Hub run by the 
-    UMass-Amherst Influenza Forecasting Center of Excellence. Forecast evaluation metrics like the 
-    logarithmic score, which has been applied in several infectious disease forecasting challenges, 
-    are then not available as they require full predictive distributions. This note provides an overview 
-    of how established methods for the evaluation of quantile and interval forecasts can be applied to 
-    epidemic forecasts. Specifically, we discuss the computation and interpretation of the weighted 
-    interval score, which is a proper score that approximates the continuous ranked probability score. 
-    It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
-    for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
-
 
 - title: 'The incubation period of 2019-nCoV from publicly reported confirmed cases: estimation and application'
   slug: lauer-2019-ncov-incubation
@@ -196,7 +349,6 @@
     National Institute of General Medical Sciences, and Alexander
     von Humboldt Foundation.
 
-
 - title: 'Coordinating the real‐time use of global influenza activity data for better public health planning'
   slug: biggerstaff-global-influenza
   authors: Biggerstaff M et al.
@@ -226,7 +378,6 @@
     code. We expect the resources we develop and the associated community to provide an 
     attractive option for the open analysis of key epidemiological data during seasonal 
     epidemics and the early stages of an influenza pandemic.
-
 
 - title: 'FluSense: A Contactless Syndromic Surveillance Platform for Influenza-Like Illness in Hospital Waiting Areas'
   slug: hossain-flusense
@@ -286,25 +437,6 @@
 
 
 #2019
-
-- title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
-  slug: improving-probabilistic-coherence
-  authors: Gibson GC, Moran K, Reich NG, Osthus D
-  preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
-  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
-  year: 2019
-  doi: 10.1101/2019.12.27.889212
-  keywords: forecasting, influenza, flusight
-  abstract: >
-    With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
-    poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
-    of influenza, the U.S. Centers for Disease Control and Prevention (CDC) runs a challenge for forecasting 
-    weighted influenza-like illness (wILI) at the national and regional level. Many models produce independent 
-    forecasts for each geographical unit, ignoring the constraint that the national wILI is a weighted sum of regional 
-    wILI, where the weights correspond to the population size of the region. We propose a novel algorithm that transforms 
-    a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
-    coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
-    over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
 
 
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
@@ -585,6 +717,7 @@
 
 # 2018
 
+
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
@@ -735,6 +868,7 @@
 
 # 2016
 
+
 - title: >
     Challenges in Real-Time Prediction of Infectious Disease: A Case Study of
     Dengue in Thailand
@@ -845,6 +979,7 @@
 
 # 2015
 
+
 - title: "Triggering Interventions for Influenza: The ALERT Algorithm"
   doi: 10.1093/cid/ciu749
   slug: reich-alert
@@ -894,6 +1029,7 @@
 
 # 2013
 
+
 - title: >
     Interactions between serotypes of dengue highlight epidemiological impact of
     cross-immunity
@@ -927,6 +1063,7 @@
 
 
 #2012
+
 
 - title: >
     Empirical power and sample size calculations for cluster-randomized and
@@ -994,6 +1131,7 @@
 
 
 #2009
+
 
 - title: 'Estimating incubation period distributions with coarse data.'
   slug: reich-estimate-incubation
